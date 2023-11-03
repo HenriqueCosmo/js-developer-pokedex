@@ -20,22 +20,60 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/cardPokemon.css">
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
-    </section>
+    <main>
+        <header>
+            <div class="container">
+                <div class="logo-wrapper">
+                    <img src="assets/images/pokeball.svg" alt="pokeball" >
+                    <h1>Pokedex</h1>
+                </div>
+                <div class="search-wrapper">
+                    <div class="search-wrap">
+                        <img src="assets/images/search.svg" alt="search icon" class="search-icon">
+                        <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input">
+                        <img src="assets/images/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon">
+                    </div>
+                    <div class="sort-wrapper">
+                        <div class="sort-wrap">
+                            <img src="assets/images/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
+                        </div>
+                        <div class="filter-wrapper">
+                            <p class="body2-fonts">Sort by:</p>
+                            <div class="filter-wrap">
+                               <div>
+                                    <input type="radio" id="number" name="filters" value="number" checked>
+                                    <label for="number" class="body3-fonts">Number</label>
+                                </div> 
+                                <div>
+                                    <input type="radio" id="name" name="filters" value="name">
+                                <label for="name" class="body3-fonts">Name</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Pokedex</h1>
+            <ol id="pokemonList" class="pokemons">
+                <!-- ..... Pokemons here ..... -->
+            </ol>
+            <div class="pagination">
+                <button id="loadMoreButton" type="button">
+                    Load More
+                </button>
+            </div>
+            <ol id="card-details-container">
+        
+            </ol>
+            <div id="not-found-message">Pokemon Not Found</div>
+        </section>
+    </main>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
