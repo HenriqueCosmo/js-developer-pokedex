@@ -87,3 +87,12 @@ function handleSearch() {
         notFoundMessage.style.display = "none";
     };
 };
+
+const closeButton = document.querySelector(".search-close-icon");
+closeButton.addEventListener("click", clearSearch);
+
+function clearSearch() {
+    searchInput.value = '';
+    displayPokemons(allPokemons);
+    notFoundMessage.style.display = "none";
+}
