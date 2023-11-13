@@ -58,27 +58,33 @@
                 </div>
             </div>
         </header>
-        <section class="content">
-            <h1>Pokedex</h1>
-            <ol id="pokemonList" class="pokemons">
-                <!-- ..... Pokemons here ..... -->
-            </ol>
-            <div class="pagination">
-                <button id="loadMoreButton" type="button">
-                    Load More
-                </button>
+        <section class="pokemon-list">
+
+            <div class="container">
+                <div class="list-wrapper">
+                    <div id="not-found-message">Pokemon not found</div>
+                </div>
             </div>
-            <ol id="card-details-container">
-        
-            </ol>
-            <div id="not-found-message">Pokemon Not Found</div>
-        </section>
+                <!-- <h1>Pokedex</h1>
+                <ol id="pokemonList" class="pokemons">
+                    ..... Pokemons here ..... -->
+                <!-- </ol>
+                <div class="pagination">
+                    <button id="loadMoreButton" type="button">
+                        Load More
+                    </button>
+                </div>
+                <ol id="card-details-container">
+            
+                </ol>-->
+        </section> 
     </main>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/pokemon.js" defer></script>
 </body>
 
 </html>
