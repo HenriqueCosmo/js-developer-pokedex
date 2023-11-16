@@ -48,8 +48,9 @@ const displayPopup = (pokemon) =>{
    
     <div id="popup">
       <div id="detailPokemon">
-          <button id="closeBtn" onClick="closePopup()">Close</button>
+          
             <li class="pokemon ${pokemon.type}">
+            <button id="closeBtn" onClick="closePopup()">Close</button>
             <span class="name">${pokemon.name}</span>
             <span class="number">#${pokemon.id.toString().padStart(3,"0")}</span>
 
