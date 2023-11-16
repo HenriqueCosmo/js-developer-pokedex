@@ -3,9 +3,32 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #fff;
     position: relative;
+}
+
+#header-pokedex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+    height: 90px;
+    border-radius: 10px;
+
+}
+
+#header-pokedex img {
+    margin: 5px 0 5px 50px;
+    height: 60px;
+
+}
+#header-pokedex h1 {
+    margin: auto;
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 .content {
